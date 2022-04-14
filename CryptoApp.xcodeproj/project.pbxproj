@@ -144,12 +144,11 @@
 		171A1EDE27C89F0800DC9D02 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				17F6BB3527F408C8002E2EB8 /* CoinDetailService.swift */,
 				17D55FEF27C790C9008656B0 /* StatisticsDataService.swift */,
+				1759D80727DB866800658B2D /* PortfolioDataService.swift */,
 				17DE610D27B3242C00395B77 /* CoinDataService.swift */,
 				17A2689A27B7C7D600A7912A /* CoinImageService.swift */,
-				1759D80727DB866800658B2D /* PortfolioDataService.swift */,
-				1759D80427DB85D800658B2D /* PortfoiloContainer.xcdatamodeld */,
+				17F6BB3527F408C8002E2EB8 /* CoinDetailService.swift */,
 			);
 			name = Services;
 			path = Model;
@@ -158,8 +157,8 @@
 		17B14AAC27B8F7EC00DB70C4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				170E504C27C0D9EB00C41702 /* LocalFileManager.swift */,
 				17C2426827E2343700B042B6 /* HapticManager.swift */,
+				170E504C27C0D9EB00C41702 /* LocalFileManager.swift */,
 				17B14AAD27B8F80D00DB70C4 /* NetWorkManager.swift */,
 			);
 			path = Utilities;
@@ -200,8 +199,8 @@
 				17D6D3B727AABC4000C24DB8 /* Extension */,
 				171A1EDE27C89F0800DC9D02 /* Services */,
 				17E45F5D27AAECB700360944 /* Model */,
+				17E45F5727AAD67700360944 /* Componments */,
 				17D6D3BC27AABF2200C24DB8 /* Core */,
-				17E45F5227AAC33800360944 /* Home Page */,
 				17CB59FF27AD42B500C94D0E /* Launch */,
 				17D6D3A727AA6BF800C24DB8 /* CryptoAppUITests */,
 				17D6D39327AA6BF700C24DB8 /* Preview Content */,
@@ -251,7 +250,8 @@
 		17D6D3BC27AABF2200C24DB8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				17E45F5727AAD67700360944 /* Componments */,
+				17E45F5027AAC07600360944 /* Views */,
+				17E45F5127AAC07E00360944 /* View Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -259,17 +259,10 @@
 		17E45F5027AAC07600360944 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				17AC4B9A27ABF1DB003D19BF /* CoinRowView.swift */,
-				17B32C6527CE451000149837 /* EditPortFolioView.swift */,
-				171A1EDA27C878A200DC9D02 /* FullStaticView.swift */,
 				17E45F5527AAC43000360944 /* HomeView.swift */,
-				17B5F5B527E48BA500853600 /* DetailView.swift */,
-				17BA1C9127F5466E002E0455 /* ChartView.swift */,
-				170E504E27C0E2D700C41702 /* SearchView.swift */,
 				17C3DD8127D84253008F051F /* SetttingView.swift */,
-				17D55FED27C79007008656B0 /* StatisticsView.swift */,
-				17A2689C27B7D56300A7912A /* CoinImageView.swift */,
-				17B32C6727CE48D600149837 /* EditPortfolioCoinView.swift */,
+				17B32C6527CE451000149837 /* EditPortFolioView.swift */,
+				17B5F5B527E48BA500853600 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,19 +277,13 @@
 			path = "View Models";
 			sourceTree = "<group>";
 		};
-		17E45F5227AAC33800360944 /* Home Page */ = {
-			isa = PBXGroup;
-			children = (
-				17E45F5127AAC07E00360944 /* View Models */,
-				17E45F5027AAC07600360944 /* Views */,
-			);
-			path = "Home Page";
-			sourceTree = "<group>";
-		};
 		17E45F5727AAD67700360944 /* Componments */ = {
 			isa = PBXGroup;
 			children = (
+				17FA9CB32807A48700317888 /* Home */,
+				17FA9CB42807A50C00317888 /* Tab */,
 				17E45F5827AAD6A700360944 /* Circle Button */,
+				17EA84B02807A3A80039FCD1 /* Rows */,
 			);
 			path = Componments;
 			sourceTree = "<group>";
@@ -317,8 +304,37 @@
 				17D55FEB27C7872E008656B0 /* StatisticsModel.swift */,
 				171A1EDC27C899CF00DC9D02 /* MarketDataModel.swift */,
 				17F6BB3227F4068D002E2EB8 /* CoinDetailModel.swift */,
+				1759D80427DB85D800658B2D /* PortfoiloContainer.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		17EA84B02807A3A80039FCD1 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				17AC4B9A27ABF1DB003D19BF /* CoinRowView.swift */,
+				17A2689C27B7D56300A7912A /* CoinImageView.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		17FA9CB32807A48700317888 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				170E504E27C0E2D700C41702 /* SearchView.swift */,
+				17D55FED27C79007008656B0 /* StatisticsView.swift */,
+				171A1EDA27C878A200DC9D02 /* FullStaticView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		17FA9CB42807A50C00317888 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				17B32C6727CE48D600149837 /* EditPortfolioCoinView.swift */,
+				17BA1C9127F5466E002E0455 /* ChartView.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
