@@ -19,7 +19,6 @@ extension Double {
         formatter.usesGroupingSeparator = true
         formatter.minimumFractionDigits = 2
         formatter.maximumFractionDigits = 2
-        
         return formatter
     }
     

@@ -40,8 +40,6 @@ class LocalFileManager{
     
     
     func saveImage(image:UIImage,folderName:String,imageName:String){
-
-        
         createFolderIfNeeded(folderName:folderName)
         
         if let savedImage = image.pngData(),
@@ -64,9 +62,7 @@ class LocalFileManager{
         }
         
         return UIImage(contentsOfFile: imageURL.path)
-        
     }
-    
     
     
     
@@ -77,19 +73,15 @@ class LocalFileManager{
         }
         
         return urlInUserPhone.appendingPathComponent(folderName)
-        
     }
 
     
     func getImageURL(folderName:String,imageName:String) -> URL? {
-        
-        
         guard let getUrlInUserPhone = getFolderURL(folderName: folderName) else {
             return nil
         }
         
         return getUrlInUserPhone.appendingPathComponent(imageName)
     }
-    
     
 }

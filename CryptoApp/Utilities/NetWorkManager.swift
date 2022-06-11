@@ -30,6 +30,8 @@ class NetWorkingManager{
     }
     
     
+    
+    
     static func completionHandler(completion:Subscribers.Completion<Error>){
             switch completion {
             case .finished:
@@ -42,6 +44,4 @@ class NetWorkingManager{
     
     }
     
-
-
 

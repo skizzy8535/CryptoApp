@@ -26,3 +26,5 @@ struct CircleButtonAnimation_Previews: PreviewProvider {
         CircleButtonAnimation(animated: .constant(true))
     }
 }
+
+

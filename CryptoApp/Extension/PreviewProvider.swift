@@ -25,13 +25,15 @@ class DevelopmentProvider {
     init(){
         
     }
-    
+   
     let coinHomeVm = HomeViewModel()
     
     let marketCapStatisticsVm = StatisticsModel(title: "Market Cap", value: "$1.63Tr", percentageChange: -9.94)
     let twentyFourHourStatisticsVm = StatisticsModel(title: "24h Volume", value: "$106.47 BN")
     let btcDominanceStatisticsVm = StatisticsModel(title: "BTC Dominance", value: "40.47%")
     let portfolioValueStatisticsVm = StatisticsModel(title: "Portfolio Value", value: "$35,510.38", percentageChange: -8.94)
+    
+    
     
     let coinModel = CoinModel(id: "bitcoin",
                               symbol: "btc",
@@ -232,6 +234,5 @@ class DevelopmentProvider {
                               currentHoldings: 1.50
 )
 
-// 37007.385905588635
     
 }

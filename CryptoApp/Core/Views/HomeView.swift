@@ -69,13 +69,11 @@ struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             HomeView(showPortfolio: false)
-                .environmentObject(developProvider.coinHomeVm)
                 .previewLayout(.sizeThatFits)
         }
 
     }
 }
-
 
 
 extension HomeView{
@@ -110,7 +108,7 @@ extension HomeView{
              CircleButtonView(imageName: "chevron.right")
                  .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
                  .onTapGesture {
-                     withAnimation {
+                     withAnimation (.spring()) {
                          showPortfolio.toggle()
                      }
                  }
@@ -234,21 +232,7 @@ extension HomeView{
         
     }
     
-    
-
-    
 }
  
-/*
- .onAppear {
-        UITableView.appearance().showsVerticalScrollIndicator = false
-    }
- .transition(.move(edge: .trailing))
- 
- 
- .onAppear {
-        UITableView.appearance().showsVerticalScrollIndicator = false
-    }
- .transition(.move(edge: .leading))
 
- */
+
