@@ -36,7 +36,7 @@ extension Double {
     }
     
     
-    func formattedwithAbbreviations() -> String {
+    func formattedWithAbbreviations() -> String {
         let num = abs(Double(self))
         let sign = (self < 0) ? "-" : ""
 

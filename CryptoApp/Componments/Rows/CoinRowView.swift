@@ -12,8 +12,6 @@ struct CoinRowView: View {
    let coin:CoinModel
    let ifHaveHoldings: Bool
    
-    
-    
     var body: some View {
         HStack{
             leftColumn

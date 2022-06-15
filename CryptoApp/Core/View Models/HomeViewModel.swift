@@ -20,11 +20,7 @@ class HomeViewModel:ObservableObject{
     
     var downloadCoinService = CoinDataService()
     var downloadCoinCancellAble = Set<AnyCancellable>()
-
-        
     var portfolioDataService = PortfolioDataService()
-    
-    
     var downloadStatisticsService = StatisticsDataService()
 
     

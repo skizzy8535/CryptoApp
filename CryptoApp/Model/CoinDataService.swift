@@ -17,8 +17,6 @@ class CoinDataService:ObservableObject {
     var coinSubscription : AnyCancellable?
     
     
-    
-    
     init(){
         downloadCoinData()
     }

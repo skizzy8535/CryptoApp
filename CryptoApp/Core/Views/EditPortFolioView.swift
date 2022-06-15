@@ -10,6 +10,7 @@ import SwiftUI
 struct EditPortFolioView: View {
 
     @EnvironmentObject var homeviewModel: HomeViewModel
+    @Environment(\.dismiss) var dismiss
     @State var selectedCoin:CoinModel? = nil
     @State var quantityText:String = ""
     @State var showCheckMark:Bool = false
@@ -28,6 +29,17 @@ struct EditPortFolioView: View {
                 }
             }.navigationTitle("Edit Portfolio")
             .toolbar {
+                
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.headline)
+                        }
+
+                    }
+                        
                     ToolbarItem(placement: .navigationBarTrailing) {
                         HStack(spacing:10){
                             Image(systemName: "checkmark")
