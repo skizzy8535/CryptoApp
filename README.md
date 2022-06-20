@@ -1,6 +1,6 @@
 # Crypto App
 
-* Check live cryptocurrency / Store Portfolio data for iPhone in Swift 5*
+*Check live cryptocurrency / Store Portfolio data for iPhone in Swift 5*
 
 The App uses MVVM, CoreData and Combine. It can donwload live cryptocurrency data from CoinGecko API.
 
